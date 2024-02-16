@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ProjetoBanco.Models.Hospedagem>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Hospedagem</h1>
+
+<p>
+    <a class="btn-criar" asp-action="Create">Criar Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DiasHospedagem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataIda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataVolta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QtdPessoas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hotel)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiasHospedagem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataIda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataVolta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtdPessoas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destino.NomeDestino)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hotel.NomeHotel)
+            </td>
+            <td>
+                <a class="a botao" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a class="a botao" asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a class="a botao" asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

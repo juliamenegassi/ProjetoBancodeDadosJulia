@@ -1,0 +1,95 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #D2EFFF !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu {
+    background-color: #9CD8FA !important;
+}
+.btn-primary {
+    background-color: #54AAC2 !important;
+    border: none;
+}
+.botao {
+    text-decoration: none;
+}
+.btn-criar {
+    text-decoration: none;
+    color: #4DBAD8 !important;
+    border: 1px solid #4DBAD8 !important;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.footer {
+    background-color: #9CD8FA !important;
+}
+.a {
+    text-decoration: none;
+    color: #71BEEB !important;
+}
+.nav-item :hover {
+    color: #4DBAD8 !important;
+}
+.img-logo {
+    width: 130px;
+    height: 100px;
+    margin-right: 270px;
+}
+
+.img-logo img {
+    width: 100%;
+    margin-left: 23px;
+}
+img-banner {
+    width: 900px;
+}
+.img-banner img {
+    width: 1046px;
+    margin-left: 140px;
+    margin-bottom: -17px;
+}
+.display-4 {
+    color: #4DBAD8 !important;
+}
+.btn-danger {
+    background-color: #528B9B !important;
+    border: none;
+}
+@media print {
+    header {
+        display: none;
+      
+    }
+    a {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    h1 {
+        display: none;
+    }
+    .col-sm-2 {
+        margin-right: 200px;
+    }
+}
